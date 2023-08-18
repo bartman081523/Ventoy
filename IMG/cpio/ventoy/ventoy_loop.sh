@@ -138,7 +138,7 @@ ventoy_get_os_type() {
         echo 'suse'; return
         
     # ArchLinux
-    elif $EGREP -q 'archlinux|ARCH' /proc/version; then
+    elif $EGREP -q 'archlinux|ARCH|arch|blackarch' /proc/version; then
         echo 'arch'; return
     
     # kiosk
